@@ -1,16 +1,22 @@
 body {
   margin: 0;
-  padding: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent; /* 👈 sin fondo */
+  background: transparent;
   font-family: Inter, system-ui, sans-serif;
 }
 
+/* CONTENEDOR GENERAL (este es el truco para Notion) */
 .flip-wrapper {
   display: flex;
   gap: 24px;
+  padding: 16px;
+  background: transparent;
+}
+
+/* MARCO DURAZNO REAL */
+.flip-frame {
+  background: #FFF2D6; /* durazno */
+  padding: 14px;
+  border-radius: 28px;
 }
 
 /* TARJETA */
@@ -18,16 +24,11 @@ body {
   width: 180px;
   height: 220px;
   background: #155638; /* verde bosque */
-  border-radius: 22px;
+  border-radius: 20px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* 👇 margen durazno */
-  outline: 14px solid #FFF2D6;
-  outline-offset: -14px;
-
   box-shadow: 0 18px 40px rgba(0,0,0,0.18);
 }
 
