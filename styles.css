@@ -1,15 +1,15 @@
-/* ===============================
-   RESET GENERAL
-   =============================== */
+/* ================================
+   BASE
+================================ */
 body {
   margin: 0;
   background: transparent;
   font-family: Inter, system-ui, sans-serif;
 }
 
-/* ===============================
+/* ================================
    CONTENEDOR GENERAL (Notion-safe)
-   =============================== */
+================================ */
 .flip-wrapper {
   display: flex;
   gap: 24px;
@@ -17,35 +17,58 @@ body {
   background: transparent;
 }
 
-/* ===============================
-   MARCO DURAZNO (IGUAL PARA AMBOS)
-   =============================== */
+/* ================================
+   MARCO DURAZNO (UNO SOLO)
+================================ */
 .flip-frame {
   background: #FFF2D6; /* durazno */
   padding: 14px;
   border-radius: 28px;
 }
 
-/* ===============================
+/* ================================
    TARJETA VERDE
-   =============================== */
+================================ */
 .flip-card {
   width: 180px;
   height: 220px;
   background: #155638; /* verde bosque */
   border-radius: 20px;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   box-shadow: 0 18px 40px rgba(0,0,0,0.18);
 }
 
-/* ===============================
+/* ================================
+   TEXTO BASE
+================================ */
+.display {
+  color: #FFF2D6;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ================================
+   🔧 AJUSTES DE TAMAÑO
+   (TOCA SOLO AQUÍ)
+================================ */
+
+/* Día */
+#day .display {
+  font-size: 96px; /* 👈 ajusta aquí */
+}
+
+/* Mes */
+#month .display {
+  font-size: 88px; /* 👈 ajusta aquí */
+  letter-spacing: 4px;
+}
+
+/* ================================
    LÍNEA CENTRAL (flip)
-   =============================== */
+================================ */
 .flip-card::after {
   content: "";
   position: absolute;
@@ -54,38 +77,4 @@ body {
   right: 16px;
   height: 1px;
   background: rgba(255,255,255,0.35);
-}
-
-/* =========================================================
-   🔧 AJUSTE DE TAMAÑOS (AQUÍ TOCAS TODO LO VISUAL)
-   ========================================================= */
-
-/* --- Día (19) --- */
-#day .display {
-  font-size: 96px;       /* ⬅ tamaño número */
-  font-weight: 700;
-}
-
-/* --- Mes (ENE) --- */
-#month .display {
-  font-size: 88px;       /* ⬅ MISMO tamaño que el día */
-  font-weight: 700;
-  letter-spacing: 4px;   /* ⬅ separación letras */
-}
-
-/* =========================================================
-   TEXTO BASE (aplica a ambos)
-   ========================================================= */
-.display {
-  color: #FFF2D6;
-  line-height: 1;
-
-  /* 🔑 Esto evita que ENE “pierda margen” */
-  padding: 20px 28px;          /* ⬅ margen interno REAL */
-  border: 10px solid #FFF2D6;  /* ⬅ borde durazno */
-  border-radius: 28px;
-
-  background: transparent;
-  box-sizing: border-box;
-  text-align: center;
 }
