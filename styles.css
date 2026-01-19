@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  height: 100vh;
+  padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFF2D6;
+  background: transparent; /* 👈 sin fondo */
   font-family: Inter, system-ui, sans-serif;
 }
 
@@ -13,19 +13,25 @@ body {
   gap: 24px;
 }
 
+/* TARJETA */
 .flip-card {
   width: 180px;
   height: 220px;
-  background: #155638;
+  background: #155638; /* verde bosque */
   border-radius: 22px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* 👇 margen durazno */
+  outline: 14px solid #FFF2D6;
+  outline-offset: -14px;
+
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
 }
 
-/* TEXTO ÚNICO */
+/* TEXTO */
 .display {
   color: #FFF2D6;
   font-weight: 700;
@@ -39,13 +45,13 @@ body {
   letter-spacing: 4px;
 }
 
-/* LÍNEA CENTRAL (VISUAL, NO TEXTO) */
+/* LÍNEA CENTRAL */
 .flip-card::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 16px;
+  right: 16px;
   height: 1px;
   background: rgba(255,255,255,0.35);
 }
