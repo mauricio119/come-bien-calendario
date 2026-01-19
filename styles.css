@@ -44,6 +44,9 @@ body {
 #month .display {
   font-size: 40px;
   letter-spacing: 4px;
+  background: #155638;
+  border: 10px solid #FFF2D6;
+  border-radius: 28px;
 }
 
 /* LÍNEA CENTRAL */
