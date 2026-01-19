@@ -47,7 +47,7 @@ body {
 .display {
   color: #FFF2D6;
   font-weight: 700;
-  line-height: 0.9;
+  line-height: 0.8;
 }
 
 /* ================================
@@ -62,7 +62,7 @@ body {
 
 /* Mes */
 #month .display {
-  font-size: 80px; /* 👈 ajusta aquí */
+  font-size: 50px; /* 👈 ajusta aquí */
   letter-spacing: 4px;
 }
 
