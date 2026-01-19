@@ -13,7 +13,7 @@ body {
 .flip-wrapper {
   display: flex;
   gap: 24px;
-  padding: 16px;
+  padding: 8px;
   background: transparent;
 }
 
@@ -22,7 +22,7 @@ body {
 ================================ */
 .flip-frame {
   background: #FFF2D6; /* durazno */
-  padding: 14px;
+  padding: 10px;
   border-radius: 28px;
 }
 
@@ -30,7 +30,7 @@ body {
    TARJETA VERDE
 ================================ */
 .flip-card {
-  width: 180px;
+  width: 160px;
   height: 220px;
   background: #155638; /* verde bosque */
   border-radius: 20px;
