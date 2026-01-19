@@ -62,7 +62,7 @@ body {
 
 /* Mes */
 #month .display {
-  font-size: 88px; /* 👈 ajusta aquí */
+  font-size: 80px; /* 👈 ajusta aquí */
   letter-spacing: 4px;
 }
 
